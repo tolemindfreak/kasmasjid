@@ -1,0 +1,55 @@
+body {
+  width: 720px;
+  height: 950px; }
+
+.header {
+  height: 100px;
+  padding: 10px;
+  border-bottom: 2px solid #333; }
+  .header .site-icon img {
+    height: 80px; }
+  .header .site-title h5 {
+    font-size: 1.7rem; }
+  .header .site-title h6 {
+    font-size: 0.76rem; }
+
+.content {
+  padding: 10px; }
+  .content .s6 {
+    width: calc(50% - 10px) !important;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .content #content-title {
+    text-align: center; }
+    .content #content-title h6 {
+      font-size: 1.4rem; }
+  .content .card {
+    min-height: 500px; }
+  .content .penerimaan, .content .pengeluaran {
+    position: relative; }
+  .content .total-nilai {
+    position: absolute;
+    bottom: 0px;
+    width: 100%; }
+  .content table {
+    font-size: 0.8rem; }
+    .content table thead {
+      font-size: 0.7rem; }
+    .content table td {
+      padding-top: 5px;
+      padding-bottom: 4px; }
+  .content .selisih span {
+    content: " ";
+    height: 20px;
+    width: 20px;
+    display: block;
+    background: green;
+    float: left;
+    margin: 0.75rem 0 0.4rem 0; }
+  .content .selisih h6 {
+    float: left;
+    margin-left: 10px;
+    font-size: 1.7rem;
+    color: grey; }
+
+/*# sourceMappingURL=print.css.map */

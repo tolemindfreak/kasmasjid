@@ -1,0 +1,224 @@
+/** Input Field*/
+
+.input-field label {
+    color: #000;
+}
+
+/* label focus color */
+
+.input-field input:focus + label {
+    color: #000;
+}
+
+.input-field input {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* label underline focus color */
+
+.input-field input:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+
+.input-field input.valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+
+.input-field input.invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #000;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.hiddenOverflow{
+    overflow: hidden;
+}
+
+.preload{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index: 999;
+    background: #fff;
+
+    .preloader-wrapper{
+        left:50%;
+        top:50%;
+    }
+}
+
+/** Side Nav **/
+
+.side-nav {
+    background: rgba($color: #fff, $alpha: 0.8);
+    width: 200px !important;
+    z-index: 1000;
+    #logo-container {
+        padding-top: 50px;
+        padding-bottom: 180px;
+        margin-bottom: 10px;
+        img {
+            width: 135px;
+        }
+    }
+
+    .divider {
+        margin-bottom: 50px;
+    }
+
+    .material-icons {
+        text-align: center;
+        width: 100%;
+        color: #424242 !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .side-nav {
+        background: rgba($color: #fff, $alpha: 0.8);
+        width: 200px !important;
+        #logo-container {
+            padding-top: 10px;
+            padding-bottom: 50px;
+            margin-bottom: 10px;
+            img {
+                width: 135px;
+            }
+        }
+
+        .divider {
+            margin-bottom: 10px;
+        }
+
+        .material-icons {
+            text-align: center;
+            width: 100%;
+            color: #424242 !important;
+        }
+    }
+}
+
+/** End of Side Nav **/
+
+.menu-button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #ffee58;
+}   
+
+.action-column{
+    display: none;
+    a{
+        color: #333;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+
+        transition: all 0.3s;
+
+        &:hover{
+            color:#125ae9;
+        }
+    } 
+}
+
+.titleRow{
+    margin-bottom: 0px !important;
+    position: relative !important;
+    h4{
+        padding:0px !important;
+    }
+
+    .pageAcion{
+        position: absolute;
+        bottom: 0px;
+        right:0px !important;
+        text-align: right;
+    }
+}
+
+.table-row-edit{
+    background-color: #125ae9 !important;
+    color: #fff !important;
+
+    a{
+        color: #fff !important;
+    }
+}
+
+.autocomplete-content{
+    position: absolute;
+    top: calc(100%);
+}
+
+#totalKas{
+    .cardResult{
+        position: relative;
+        min-height: 600px;
+
+        padding: 10px 20px;
+    }
+
+    .cardFooter{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-weight: 500;
+        padding: 0px 10px;
+        p{
+            margin:0px;
+        }
+    }
+
+    .cardTotal{
+        text-align: right;
+    }
+
+    tbody{
+        td:last-child{
+            text-align: right;
+        }
+    }
+
+    .cardStatus{
+        padding-left: 0px;
+        margin-left: 20px;
+        p{
+            float: left;
+            margin: 0px 0px 0px 20px;
+            line-height: 30px;
+            font-size: 2.5em;
+            font-weight: 200;
+        }
+
+        span{
+            float: left;
+            content:" ";
+            display: block;
+            width:30px;
+            height: 30px;
+        }
+    }
+}
+
